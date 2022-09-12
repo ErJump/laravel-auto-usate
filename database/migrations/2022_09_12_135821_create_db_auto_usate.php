@@ -13,8 +13,12 @@ class CreateDbAutoUsate extends Migration
      */
     public function up()
     {
-        Schema::create('db_auto_usate', function (Blueprint $table) {
+        Schema::create('cars', function (Blueprint $table) {
             $table->id();
+            $table->string('marca');
+            $table->string('modello');
+            $table->mediumInteger('prezzo')->unsigned();
+            $table->boolean('disponibile');
             $table->timestamps();
         });
     }
