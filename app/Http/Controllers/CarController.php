@@ -60,7 +60,8 @@ class CarController extends Controller
      */
     public function edit($id)
     {
-        //
+        $car = Car::findOrFail($id);
+        return view('cars.edit', compact('car'));
     }
 
     /**
@@ -72,7 +73,10 @@ class CarController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $data = $request->all();
+        $car = Car::findOrFail($id);
+        $car->update($data);
+        return redirect()->route('cars.index');
     }
 
     /**

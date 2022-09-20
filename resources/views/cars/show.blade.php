@@ -12,6 +12,7 @@
                 </div>
             </div>
             <a href="{{route('cars.index')}}">Indietro</a>
+            <a href="{{route('cars.edit', $car->id)}}">Modifica</a>
         </div>
     </div>
 @endsection
