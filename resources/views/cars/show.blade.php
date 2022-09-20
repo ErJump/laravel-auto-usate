@@ -11,8 +11,8 @@
                     <p class="card-text text-center">{{$car->disponibile}}.</p>
                 </div>
             </div>
-            <a href="{{route('cars.index')}}">Indietro</a>
-            <a href="{{route('cars.edit', $car->id)}}">Modifica</a>
+            <a href="{{route('cars.index')}}" class="btn btn-secondary">Indietro</a>
+            <a href="{{route('cars.edit', $car->id)}}" class="btn btn-success">Modifica</a>
         </div>
     </div>
 @endsection

@@ -21,9 +21,12 @@
         </div>
         <!-- Checkbox -->
         <div class="form-check d-flex justify-content-center mb-4">
-            <input class="form-check-input me-2" type="checkbox" value="{{old('disponibile', $car->disponibile)}}" id="form4Example4" {{old('disponibile', $car->disponibile) == 1 ? 'checked' : '' }} />
+            <input type="hidden" name="disponibile" value="0">
+            <input class="form-check-input me-2" type="checkbox" value="1" id="form4Example4" name="disponibile" {{old('disponibile', $car->disponibile) == 1 ? 'checked' : '' }}/>
+
+
             <label class="form-check-label" for="form4Example4">
-                Send me a copy of this message
+                Disponibile
             </label>
         </div>
         <!-- Submit button -->
