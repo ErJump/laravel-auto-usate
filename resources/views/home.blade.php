@@ -3,6 +3,7 @@
 @section('content')
     <h1 class="text-center">Belle le macchine</h1>
     <div class="container">
+        <a href="{{ route('cars.create') }}">inserisci macchina</a>
         <div class="row">
             @foreach ( $cars as $car)
                 <div class="card col-3" style="width: 18rem;">
