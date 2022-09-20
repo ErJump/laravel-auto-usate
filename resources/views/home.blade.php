@@ -13,6 +13,11 @@
                             <h6 class="card-subtitle mb-2 text-muted text-center">{{ $car->modello }}</h6>
                             <p class="card-text text-center">{{$car->prezzo}}.</p>
                             <p class="card-text text-center">{{$car->disponibile}}.</p>
+                            <form action="{{route('cars.destroy', $car->id)}}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit">destroy</button>
+                            </form>
                         </div>
                     </a>
                 </div>
