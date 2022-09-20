@@ -16,7 +16,7 @@
         </div>
         <!-- Message input -->
         <div class="form-outline mb-4">
-            <input name='prezzo' value='{{ old('prezzo', $car->prezzo) }}' type="text" id="form4Example3" class="form-control" />
+            <input name='prezzo' value='{{ old('prezzo', $car->prezzo) }}' type="number" step="0.1"  type="text" id="form4Example3" class="form-control" />
             <label class="form-label" for="form4Example3">prezzo</label>
         </div>
         <!-- Checkbox -->
