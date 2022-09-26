@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row">
             <div class="card w-100 col-12" style="width: 18rem;">
-                <div class="card-body">
+                <div class="card-body text-dark">
                     <h5 class="card-title text-center">{{ $car->marca }}</h5>
                     <h6 class="card-subtitle mb-2 text-muted text-center">{{ $car->modello }}</h6>
                     <p class="card-text text-center">{{$car->prezzo}}.</p>
