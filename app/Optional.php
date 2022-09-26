@@ -10,4 +10,7 @@ class Optional extends Model
         'name'
     ];
 
+    public function cars(){
+        return $this->belongsToMany('App\Car');
+    }
 }
