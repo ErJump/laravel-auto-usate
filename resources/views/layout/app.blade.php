@@ -18,7 +18,7 @@
             <a class="text-white btn btn-success" href="{{route('cars.create')}}">Create new car</a>
         </li>
         <li class="d-inline">
-            <a class="text-white btn btn-danger" href="{{route('cars.index')}}">Optional List</a>
+            <a class="text-white btn btn-danger" href="{{route('optionals.index')}}">Optional List</a>
         </li>
     </ul>
 </header>
