@@ -29,6 +29,17 @@
                 Disponibile
             </label>
         </div>
+        <div class="form-outline mb-4">
+            @foreach ($optionals as $optional)
+
+            <div class="form-check">
+                <input type="checkbox" name="optionals[]" class="form-check-input" type="checkbox" id="input-optionals{{$optional->id}}" value="{{$optional->id}}"
+                {{$car->optionals->contains($optional) ? 'checked' : ''}}>
+                <label for="input-optionals{{$optional->id}}" class="form-check-label ">{{$optional->name}}</label>
+            </div>
+            @endforeach
+
+        </div>
         <!-- Submit button -->
         <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
     </form>

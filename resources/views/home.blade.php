@@ -4,7 +4,7 @@
     <h1 class="text-center">Belle le macchine</h1>
     <div class="container">
         <a href="{{ route('cars.create') }}" class="btn btn-primary">inserisci macchina</a>
-        <div class="row my-4">
+        <div class="row my-4 g-4">
             @foreach ( $cars as $car)
                 <div class="card col-3 mx-2" style="width: 18rem;">
                     <a href="{{route('cars.show', $car->id)}}">
