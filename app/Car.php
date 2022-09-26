@@ -15,4 +15,8 @@ class Car extends Model
         'prezzo',
         'disponibile',
     ];
+
+    public function optionals(){
+        return $this->belongsToMany('App\Optional');
+    }
 }
